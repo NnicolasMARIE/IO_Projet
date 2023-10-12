@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Roman, Romain & Nicolas">
+    <meta name="generator" content="">
+    <title>UPPA SCIENCE - SALLES</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/dashboard.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script src="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body">
+
+    <header class="navbar navbar-dark sticky-top bg-main flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">UPPA SCIENCE - SALLES</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">
+                                <span data-feather="home"></span> Tableau de bord
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./informations.html">
+                                <span data-feather="file"></span> Les moyennes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./analyse.html">
+                                <span data-feather="shopping-cart"></span> Analyse des données
+                            </a>
+                        </li>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Analyse des données</h1>
+                </div>
+                <div id="ContentAnalyse"></div>
+            </main>
+        </div>
+    </div>
+
+    <p></p>
+
+    <script src="./src/bootstrap.bundle.min.js"></script>
+    <script src="./src/data/data.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./src/salle/salle.js"></script>
+    <script src="./src/salle/reservation.js"></script>
+    <script src="./src/analyse/analyse.js"></script>
+    <script src="./src/dashboard.js"></script>
+    </body>
+
+</html>
